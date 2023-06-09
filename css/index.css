@@ -56,8 +56,7 @@ a {
 }
 
 body {
-    font-family:'DotGothic16', sans-serif;;
-    ;
+    font-family:'DotGothic16', sans-serif;
     font-size: 16pt;
     color: #000000;
     line-height: 1;
@@ -100,6 +99,13 @@ img {
 
 .site-menu ul li a {
     font-family: 'DotGothic16', sans-serif;
+    
+}
+
+.site-menu li {
+    color: #ff0000;
+    font-weight: bold;  
+    flex-direction: column;
 }
 
 @media (max-width: 800px) {
@@ -110,6 +116,7 @@ img {
 
     .site-menu li {
         margin-top: 20px;
+        flex-direction: column-reverse;
     }
 
     .header {
