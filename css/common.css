@@ -1,50 +1,4 @@
-    @charset "utf-8";
-nav.floating {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    background-color: #f2ff00;
-    border-radius: 10px;
-}
-.first-view {
-    height: calc(100vh - 110px);
-    background-image: url(../images/index/bg_main.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-.first-view-text {
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 80px;
-    color: #ff0000;
-    font-weight: bold;
-    text-shadow: 1px 1px 10px #5D116E;
-
-}
-
-.first-view-text h1 {
-    font-family:  'DotGothic16', sans-serif;;
-    font-size: 56px;
-    line-height: 72px;
-}
-
-.first-view-text p {
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-.lead {
-    max-width: 1200px;
-    margin: 60px auto;
-}
-
+@charset "utf-8";
 *,
 ::before,
 ::after {
@@ -52,30 +6,23 @@ nav.floating {
     margin: 0;
     box-sizing: border-box;
 }
-
 ul, ol {
-    font-family:'DotGothic16', sans-serif;
     list-style: none;
 }
-
 a {
     color: inherit;
     text-decoration: none;
 }
-
 body {
-    font-family:'DotGothic16', sans-serif, sans-serif;;
-    ;
+    font-family: sans-serif;
     font-size: 16pt;
     color: #000000;
     line-height: 1;
-    background-color: #ff0000;
+    background-color: #FFFFFF;
 }
-
 img {
     max-width: 100%;
 }
-
 .header-inner {
     max-width: 1200px;
     height: 110px;
@@ -87,42 +34,49 @@ img {
     justify-content: space-between;
     align-items: center;
 }
-
 .toggle-menu-button {
     display: none;
 }
-
 .header-logo {
     display: block;
     width: 170px;
 }
-
 .site-menu ul {
     display: flex;
 }
-
 .site-menu ul li {
     margin-left: 20px;
     margin-right: 20px;
 }
-
 .site-menu ul li a {
-    font-family: 'DotGothic16', sans-serif, sans-serif;;
+    font-family: 'Dela Gothic One', cursive;
 }
 @media (max-width: 800px) {
-    .toggle-menu-button
-    {
+    .site-menu ul {
         display: block;
-        width: 44px;
-        height: 34px;
-        background-image: url(../images/common/icon-menu.png);
-        background-size: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        border: none;
-        border-radius: 0;
-        outline: none;
+        text-align: center;
+    }
+    .site-menu li {
+        margin-top: 20px;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        height: 50px;
+        z-index: 10;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    .header-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+        position: relative;
+    }
+    .header-logo {
+        width: 100px;
     }
     .header-site-menu {
         position: absolute;
@@ -138,52 +92,29 @@ img {
     .header-site-menu.is-show {
         display: block;
     }
-
-    .site-menu ul {
-        display: block;
-        text-align: center;
-    }
-
-    .site-menu li {
-        margin-top: 20px;
-
-    }
-
-    .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #FFFFFF;
-        height: 50px;
-        z-index: 10;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .header-inner {
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 100%;
-        position: relative;
-    }
-
-    .header-logo {
-        width: 100px;
-    }
-
     .main {
-        padding-top: 50px;
+        padding-top: 50px;;
     }
-
     .footer-logo {
         margin-top: 60px;
     }
-
     .copyright {
         margin-top: 50px;
     }
+    .toggle-menu-button {
+        display: block;
+        width: 44px;
+        height: 34px;
+        background-image: url(../images/common/icon-menu.png);
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        outline: none;
+    }
 }
-
 .footer {
     color: #FFFFFF;
     background-color: #24211B;
@@ -193,16 +124,13 @@ img {
     flex-direction: column;
     align-items: center;
 }
-
 .footer-logo {
     display: block;
     width: 235px;
     margin-top: 90px;
 }
-
 .copyright {
     font-size: 14pt;
     font-weight: bold;
     margin-top: 90px;
 }
-
